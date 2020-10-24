@@ -1,0 +1,17 @@
+//=======================================================
+/* base/_normalize.scss */
+//=======================================================
+
+/** 
+  A simple normalize, just reset padding and margin to 0 and set
+  box-sizen to border-box, of all elements and their after and before
+*/
+* {
+  &::before,
+  &::after,
+  & {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}

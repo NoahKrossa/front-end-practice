@@ -1,0 +1,30 @@
+//=======================================================
+/* layout/_grid.scss */
+//=======================================================
+
+/*
+ * Generate 20 columns for each breakpoint
+ * format:
+ * .col_[size:(5 to 100 by 5)]__[breakpoint key]
+ * example:
+ * .col_50_xl {
+ *   width: 50%
+ * }
+ * 
+ * !IMPORTANT: 
+ * USE THOSE CLASSES INTO .row element
+*/
+@each $device, $size in $breakpoints {
+  @media screen and (min-width: $size) {
+    @for $i from 1 through 20 {
+      .col_#{$i*5}_#{$device} {
+        width: $i * 5%;
+      }
+    }
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}

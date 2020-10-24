@@ -1,0 +1,80 @@
+/* base/_config */
+
+
+/* @Breakpoints*/
+/* List of breakpoints, contain: 
+  - xs: smallest screen
+  - sm: small screen (mobile)
+  - md: mmedium screen (tablet, mobile[Landscape])
+  - lg: large sceen
+  - xl: desktop
+  - xxl: HD widthscreen
+*/
+$breakpoints: (
+  xs: 320px,
+  sm: 480px,
+  md: 768px,
+  lg: 1020px,
+  xl: 1281px,
+  xxl: 1920px,
+);
+/* individual breakpoints*/
+$breakpoint_xs: map-get($breakpoints, xs);
+$breakpoint_sm: map-get($breakpoints, sm);
+$breakpoint_md: map-get($breakpoints, md);
+$breakpoint_lg: map-get($breakpoints, lg);
+$breakpoint_xl: map-get($breakpoints, xl);
+$breakpoint_xxl: map-get($breakpoints,  xxl);
+//=======================================================
+
+
+/* @Unit */
+/* 
+  This var is for keep padding and margin semanticity, it's value is based
+  in golden proportion, for more info see: https://en.wikipedia.org/wiki/Golden_ratio
+  usage: 
+    whene u need to set some padding or margin, use $unit * [integer]
+*/
+$unit: 0.101125rem; /* 1.618px whene HTML font-size:16px*/
+//=======================================================
+
+
+/* grayscale*/
+/* 9 level of gray g--[1-9], when more increase more lighten gray*/
+$color_grayscale: (
+  g1:#212529,
+  g2: #343a40,
+  g3: #495057,
+  g4: #6c757d,
+  g5: #adb5bd,
+  g6: #ced4da,
+  g7: #dee2e6,
+  g8: #e9ecef, 
+  g9: #f8f9fa
+);
+/* @colors */
+$color_blue_dark: #284b63;
+$color_green_dark: #3c6e71;
+$color_green: #2a9d8f;
+$color_gray_dark: #353535;
+$color_gray_light: map-get($color__grayscale, g--7);
+$color_gray: #d9d9d9;
+$color_white: #fff;
+$color_red: #fe5f55;
+//=======================================================
+
+/* @font-family */
+$font_family_base:Arial, Helvetica, sans-serif;
+$font_family_mono:monospace;
+//=======================================================
+
+/* @font-size
+ * there are 7 sizes, $font__size--[1-7]
+ **/
+ $font_size-1: 3rem;
+ $font_size-2: 2.4rem;
+ $font_size-3: 2rem;
+ $font_size-4: 1.4rem;
+ $font_size-5: 1.2rem;
+ $font_size-6: 1rem;
+ $font_size-7: 0.85rem;

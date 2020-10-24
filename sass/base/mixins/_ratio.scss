@@ -3,8 +3,8 @@
 //=======================================================
 
 /*
-   Recive ratio param [x,y] 
-   (1:1) as default ratio
+  Recive ratio param [x,y] 
+  (1:1) as default ratio
 */
 @mixin ratio-aspect($ratio: 1 1) {
   position: relative;
@@ -13,7 +13,7 @@
     display: block;
     content: "";
     width: 100%;
-    padding-top: nth($ratio, 2 )/ nth($ratio, 1 ) * 100%;
+    padding-top: nth($ratio, 2) / nth($ratio, 1) * 100%;
   }
 
   > .content {

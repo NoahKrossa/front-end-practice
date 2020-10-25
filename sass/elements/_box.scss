@@ -1,0 +1,26 @@
+//=======================================================
+/* base/_config */
+//=======================================================
+
+/**
+* Box elements use for wrape a group of elements,
+* like tweet object or product card
+*/
+
+.box {
+  //=======================================================
+  /* Box config */
+  //=======================================================
+  $bg_color: $color_blue_dark;
+  $text_color: $color_white;
+  $padding: ($unit*5);
+  $border_radio: 4px;
+
+  /* Layout */
+  padding: $padding;
+
+  /* Skin */
+  background-color: $bg_color;
+  color: $text_color;
+  border-radius: $border_radio;
+}

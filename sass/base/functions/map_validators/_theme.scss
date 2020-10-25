@@ -1,0 +1,15 @@
+//=======================================================
+/* base/functions/_theme.scss */
+//=======================================================
+
+/**
+ * This function validate theme color map
+*/
+@function color_theme($key) {
+  @if map-has-key($color_theme, $key) {
+    @return map-get($color_theme, $key)
+  }
+
+  @warn "Unknow `#{$key}` in $color_theme";
+  @return null;
+}

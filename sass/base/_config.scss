@@ -52,12 +52,21 @@ $color_grayscale: (
   g9: #f8f9fa,
 );
 /* @colors */
-$color_blue_dark: #284b63;
-$color_blue: #2ec4b6;
-$color_gray: #d9d9d9;
-$color_yellow: #ff9f1c;
-$color_white: #fdfffc;
-$color_red: #e71d36;
+$color_theme: (
+  blue: #2ec4b6,
+  blue_dark: #284b63,
+  yellow: #ff9f1c,
+  red: #e71d36,
+  gray: #d9d9d9,
+  white: #fdfffc
+);
+
+$color_blue:  color_theme('blue');
+$color_blue_dark: color_theme('blue_dark');
+$color_gray:  color_theme('gray');
+$color_yellow:  color_theme('yellow');
+$color_white:  color_theme('white');
+$color_red:  color_theme('red');
 //=======================================================
 
 /* @font-family */

@@ -1,8 +1,9 @@
 // BASE
-@import './base/config';
-@import './base/functions/grayscale';
+@import './base/functions/map_validators/grayscale';
+@import './base/functions/map_validators/theme';
 @import './base/mixins/breakpoints';
 @import './base/mixins/ratio';
+@import './base/config';
 @import './base/normalize';
 
 // ELEMENTS

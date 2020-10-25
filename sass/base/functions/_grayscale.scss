@@ -1,0 +1,15 @@
+//=======================================================
+/* base/functions/_grayscale.scss */
+//=======================================================
+
+/** 
+ * This function help to validate $color_grayscale map
+*/
+@function grayscale($key) {
+  @if map-has-key($color_grayscale, $key) {
+    @return map-get($color_grayscale , $key);
+  }
+
+  @warn "Unknow `#{$key}` in $color_grayscale";
+  @return null;
+}

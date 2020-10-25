@@ -1,17 +1,19 @@
 // BASE
 @import './base/config';
+@import './base/functions/grayscale';
 @import './base/mixins/breakpoints';
 @import './base/mixins/ratio';
 @import './base/normalize';
 
 // ELEMENTS
 @import './elements/box';
+@import './elements/button';
 
 // LAYOUT
 @import './layout/grid';
 
 // Fontawesome
-@import "./fontawesome/scss/fontawesome.scss";
-@import "./fontawesome/scss/solid.scss";
-@import "./fontawesome/scss/regular.scss";
-@import "./fontawesome/scss/brands.scss";
+// @import "./fontawesome/scss/fontawesome.scss";
+// @import "./fontawesome/scss/solid.scss";
+// @import "./fontawesome/scss/regular.scss";
+// @import "./fontawesome/scss/brands.scss";

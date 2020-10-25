@@ -1,0 +1,35 @@
+//=======================================================
+/* elements/_button.scss */
+//=======================================================
+
+.button {
+  //=======================================================
+  /* Config */
+  //=======================================================
+  $bg_color: grayscale(g7);
+  $text_color: grayscale(g2);
+  $padding: ($unit *5) ($unit*10);
+  $border_radio: 4px;
+  $focus_bg_color: grayscale(g5);
+
+  /* Layout */
+  position: relative;
+  padding: $padding;
+  display: inline-block;
+
+  /* Skin */
+  appearance: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: $border_radio;
+  background-color: $bg_color;
+  font-size: $font_size_6;
+  color: $text_color;
+
+  /* States */
+  &:focus {
+    box-shadow:0 0 0 1px $focus_bg_color inset;
+  }
+}

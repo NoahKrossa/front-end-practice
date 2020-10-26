@@ -9,7 +9,7 @@
   $bg_color: grayscale(g7);
   $text_color: grayscale(g2);
   $padding: ($unit *5) ($unit*10);
-  $border_radio: 4px;
+  $border_radio: $default_border_radio;  
   $focus_bg_color: grayscale(g5);
 
   /* Layout */

@@ -14,7 +14,7 @@
   $bg_color: $color_blue_dark;
   $text_color: $color_white;
   $padding: ($unit*5);
-  $border_radio: 4px;
+  $border_radio: $default_border_radio;
 
   /* Layout */
   padding: $padding;

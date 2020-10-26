@@ -1,0 +1,92 @@
+//=======================================================
+/* elements/_button.scss */
+//=======================================================
+
+.menu {
+  //=======================================================
+  /* Config */
+  //=======================================================
+  $text_color: grayscale(g2);
+  $width: $unit * 180;
+  $padding: ($unit * 10);
+  $border_radio: $default_border_radio;
+
+  /* Layout */
+  max-width: $width;
+  padding: $padding;
+
+  /* Skin */
+  list-style: none;
+  border-radius: $border_radio;
+  border: 0.5px solid grayscale(g5);
+  color: $text_color;
+}
+
+.menu_label {
+  //=======================================================
+  /* Config */
+  //=======================================================
+  $text_color: grayscale(g4);
+  $font_size: $font_size_7;
+  $padding_bottom: ($unit * 5);
+
+  /* Layout */
+  display: block;
+  padding-bottom: $padding_bottom;
+
+  /* Skin */
+  color: $text_color;
+  font-size: $font_size;
+  text-transform: uppercase;
+}
+
+.menu_item {
+  //=======================================================
+  /* Config */
+  //=======================================================
+  $line_height: ($unit*20);
+
+  /* Layout */
+  line-height: $line_height;
+
+  /* Skin */
+
+  /* States*/
+}
+
+.menu_link {
+  //=======================================================
+  /* Config */
+  //=======================================================
+  $padding: 0 ($unit * 5);
+  $border_Radio: $default_border_radio;
+  $hover_bg_color: grayscale(g9);
+  $active_bg_color: $color_blue;
+
+  /* Layout */
+  display: block;
+  padding: $padding;
+
+  /* Skin */
+  color: inherit;
+  text-decoration: none;
+  border-radius: $border_Radio;
+
+  /* States */
+  &:hover {
+    background: $hover_bg_color;
+  }
+  &.is_active {
+    background-color: $color_blue;
+    color: $color_white;
+  }
+
+  /* Childs */
+  .menu_link_icon {
+    /* config */
+    $padding_right: ($unit * 1);
+
+    /* Layout */
+    padding-right: $padding_right;
+  }
+}

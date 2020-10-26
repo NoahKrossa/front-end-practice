@@ -1,0 +1,22 @@
+//=======================================================
+/* elements/_tag.scss */
+//=======================================================
+
+.tag {
+  /* Config */
+  $font_size: $font_size_7;
+  $border_radio: $default_border_radio;
+  $bg_color: grayscale(g8);
+  $padding: ($unit*3) ($unit*5);
+  $text_color: grayscale(g2);
+
+  /* Layout */
+  padding: $padding;
+  display: inline-block;
+
+  /* Skin */
+  color: $text_color;
+  border-radius: $border_radio;
+  background-color: $bg_color;
+  font-size: $font_size;
+}

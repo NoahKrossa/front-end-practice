@@ -53,12 +53,12 @@ $color_grayscale: (
 );
 /* @colors */
 $color_theme: (
-  blue: #2ec4b6,
-  blue_dark: #284b63,
-  yellow: #ff9f1c,
-  red: #e71d36,
-  gray: #d9d9d9,
-  white: #fdfffc
+  'blue': #2ec4b6,
+  'blue_dark': #284b63,
+  'yellow': #ff9f1c,
+  'red': #e71d36,
+  'gray': #d9d9d9,
+  'white': #fdfffc
 );
 
 $color_blue:  color_theme('blue');
@@ -77,10 +77,14 @@ $font_family_mono: monospace;
 /* @font-size
  * there are 7 sizes, $font__size--[1-7]
  **/
-$font_size-1: 3rem;
-$font_size-2: 2.4rem;
-$font_size-6: 1rem;
-$font_size-3: 2rem;
-$font_size-4: 1.4rem;
-$font_size-5: 1.2rem;
-$font_size-7: 0.85rem;
+$font_size_1: 3rem;
+$font_size_2: 2.4rem;
+$font_size_6: 1rem;
+$font_size_3: 2rem;
+$font_size_4: 1.4rem;
+$font_size_5: 1.2rem;
+$font_size_7: 0.85rem;
+//=======================================================
+
+/* @border-radio */
+$default_border_radio: 4px;

@@ -1,0 +1,46 @@
+//=======================================================
+/* components/_tabs.scss */
+//=======================================================
+
+.tabs {
+  /* Config */
+  $border_bottom: .5px solid grayscale(g6);
+
+  /* Layout */
+  display: flex;
+  
+  /* Skin */
+  list-style: none;
+  border-bottom: $border_bottom;
+  /* Childs */
+  a {
+    
+    /* Config */
+    $padding: ($unit*5) ($unit*8);
+    $font_size: $font_size_7;
+    $text_color: grayscale(g2);
+    $active_color: $color_blue;
+    $active_border: .5px solid $active_color;
+    $hover_border: .5px solid grayscale(g4);
+
+    /* Layout */
+    padding: $padding ;
+    display: block;
+    position: relative;
+    top: .5px;
+
+    /* Skin */
+    color: $text_color;
+    text-decoration: none;
+    font-size: $font_size;
+
+    /* States*/
+    &.is_active {
+      color:$active_color ;
+      border-bottom: $active_border;
+    }
+    &:hover {
+      border-bottom: $hover_border;
+    }
+  }
+}

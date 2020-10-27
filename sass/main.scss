@@ -3,6 +3,7 @@
 @import './base/functions/map_validators/theme';
 @import './base/mixins/breakpoints';
 @import './base/mixins/ratio';
+@import './base/mixins/skin';
 @import './base/config';
 @import './base/normalize';
 
@@ -10,6 +11,7 @@
 @import './elements/box';
 @import './elements/button';
 @import './elements/icon';
+@import './elements/tag';
 
 // components
 @import './components/menu';

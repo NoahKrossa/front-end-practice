@@ -88,3 +88,23 @@ $font_size_7: 0.85rem;
 
 /* @border-radio */
 $default_border_radio: 4px;
+//=======================================================
+
+/* @skins */
+$skins: (
+  
+  'default': (
+    bg_color: grayscale(g7),
+    border_radio: $default_border_radio,
+    text_color: grayscale(g3),
+    border: .5px solid grayscale(g5)
+  ),
+
+  'dark': (
+    bg_color: grayscale(g2),
+    border_radio: $default_border_radio,
+    text_color: white,
+    border: .5px solid grayscale(g3)
+  )
+);
+

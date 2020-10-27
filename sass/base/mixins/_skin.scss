@@ -1,0 +1,21 @@
+//=======================================================
+/* base/mixins/ratio.scss */
+//=======================================================
+
+/** 
+ * Help to modulate skins, using $skins config var you can access
+ * to each modules by key param
+*/
+@mixin skin($key) {
+
+  @if map-has-key($skins, $key) {
+    $skin: map-get($skins, $key);
+    background-color: map-get($skin, bg_color);
+    border-radius: map-get($skin, border_radio) ;
+    color: map-get($skin, text_color) ;
+  }
+  @else {
+    @warn 'Unknowed skin key'
+  }
+
+}

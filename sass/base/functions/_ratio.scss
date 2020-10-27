@@ -1,0 +1,7 @@
+@function ratio_map($key) {
+  @if map-has-key($ratios, $key) {
+    @return map-get($ratios, $key)
+  }
+  @warn 'Undefined #{$key} into $ratios';
+  @return null;
+}

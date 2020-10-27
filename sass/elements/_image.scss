@@ -1,0 +1,17 @@
+//=======================================================
+/* elements/_image.scss */
+//=======================================================
+
+/* usage
+  <figure class="image image_[ratio_key]">
+    <img class="content" src="..."></img> 
+    (It's important set 'content' class in img element to apply correspondent ratio aspect) 
+  </figure>
+*/
+@each $key, $value in $ratios {
+  
+  .image_#{$key} {
+    /* Layout*/
+      @include ratio_aspect($value);
+    }
+}

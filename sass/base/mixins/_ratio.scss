@@ -6,7 +6,7 @@
   Recive ratio param [x,y] 
   (1:1) as default ratio
 */
-@mixin ratio-aspect($ratio: 1 1) {
+@mixin ratio_aspect($ratio: 1 1) {
   position: relative;
 
   &::before {

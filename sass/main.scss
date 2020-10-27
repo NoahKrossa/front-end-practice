@@ -1,6 +1,7 @@
 // BASE
 @import './base/functions/map_validators/grayscale';
 @import './base/functions/map_validators/theme';
+@import './base/functions/ratio';
 @import './base/mixins/breakpoints';
 @import './base/mixins/ratio';
 @import './base/mixins/skin';
@@ -10,11 +11,12 @@
 // ELEMENTS
 @import './elements/box';
 @import './elements/button';
-@import './elements/icon';
 @import './elements/tag';
+@import './elements/image';
 
 // components
 @import './components/menu';
+@import './components/tabas';
 
 // LAYOUT
 @import './layout/grid';

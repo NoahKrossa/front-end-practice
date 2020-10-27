@@ -15,8 +15,6 @@
   display: inline-block;
 
   /* Skin */
-  color: $text_color;
-  border-radius: $border_radio;
-  background-color: $bg_color;
   font-size: $font_size;
+  @include skin('default');
 }

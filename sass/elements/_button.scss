@@ -23,10 +23,9 @@
   border: none;
   text-decoration: none;
   cursor: pointer;
-  border-radius: $border_radio;
-  background-color: $bg_color;
   font-size: $font_size_6;
-  color: $text_color;
+
+  @include skin('default')
 
   /* States */
   &:focus {

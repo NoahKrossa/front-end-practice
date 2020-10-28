@@ -28,11 +28,14 @@
   //=======================================================
   $text_color: grayscale(g4);
   $font_size: $font_size_7;
-  $padding_bottom: ($unit * 5);
+  $padding: ($unit * 10) 0 ($unit*5) 0;
 
   /* Layout */
   display: block;
-  padding-bottom: $padding_bottom;
+  padding: $padding;
+  &:first-child {
+    padding-top: 0;
+  }
 
   /* Skin */
   color: $text_color;

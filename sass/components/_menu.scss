@@ -76,6 +76,7 @@
   &:hover {
     background: $hover_bg_color;
   }
+
   &.is_active {
     background-color: $color_blue;
     color: $color_white;
@@ -89,4 +90,35 @@
     /* Layout */
     padding-right: $padding_right;
   }
+}
+
+.menu_dark {
+  /* Config */
+  $bg_color: grayscale(g2);
+  $text_color: $color_white;
+
+  /* Skin */
+  border: none;
+  background-color: $bg_color;
+  color: $text_color;
+
+  /* Childs */
+  .menu_label {
+    /* Config */
+    $text_color: grayscale(g5);
+
+    /* Skin */
+    color: $text_color;
+  }
+
+  .menu_link {
+    /* Config */
+    $hover_bg_color: grayscale(g3);
+
+    /* States */
+    &:hover {
+      background-color: $hover_bg_color;
+    }
+  }
+
 }
